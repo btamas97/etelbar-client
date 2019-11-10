@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:padding="8dp"
+    android:layout_margin="4dp"
+    android:id="@+id/cart_item_layout"
+    android:background="@drawable/rounded_layout">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="64dp"
+        android:layout_height="72dp"
+        android:id="@+id/cart_food_image"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:id="@+id/cart_food_name"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/cart_food_price"
+        android:layout_toEndOf="@+id/cart_food_image"
+        android:layout_toRightOf="@id/cart_food_image"
+        android:text="Csirkemell Salátaágyon"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cart_food_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dp"
+        android:layout_toStartOf="@+id/cart_item_delete"
+        android:layout_toLeftOf="@id/cart_item_delete"
+        android:text="500$"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/cart_item_delete"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:padding="4dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_delete_black_24dp"
+        />
+
+</RelativeLayout>

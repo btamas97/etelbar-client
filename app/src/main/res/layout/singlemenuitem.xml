@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:layout_margin="4dp"
+    android:padding="8dp"
+    android:orientation="horizontal"
+    android:background="@drawable/rounded_layout">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="64dp"
+        android:layout_height="72dp"
+        android:id="@+id/foodImage"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:layout_toStartOf="@+id/foodPrice"
+        android:layout_toEndOf="@+id/foodImage"
+        android:text="Csirkemell salátaágyon"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/foodPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="51dp"
+        android:text="1200Ft"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+
+
+</RelativeLayout>

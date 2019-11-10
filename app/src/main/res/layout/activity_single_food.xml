@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingleFoodActivity"
+    android:padding="16dp"
+    android:background="@drawable/rounded_layout">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:id="@+id/singleImageView"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/singleTitle"
+        android:textSize="32sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="placeholder"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/singleImageView"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/singleCategory"
+        android:text="placeholder"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@id/singleTitle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/singleDesc"
+        android:layout_marginBottom="4dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="placeholder for food describtion"
+        android:layout_below="@+id/singleCategory"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/singlePrice"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentRight="true"
+        android:text="1200 Ft"
+        android:layout_above="@id/orderButton"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kosárba"
+        android:id="@+id/orderButton"
+        android:onClick="addToCartClicked"
+        android:background="@drawable/rounded_corner_button"
+        android:layout_margin="4dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorBackground"
+        android:fontFamily=""/>
+
+</RelativeLayout>
